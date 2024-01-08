@@ -1,0 +1,17 @@
+homeassistant: true
+# allow new devices to join, turn off after you pair all the devices
+permit_join: true
+frontend: true
+# MQTT settings
+mqtt:
+# MQTT base topic for zigbee2mqtt MQTT messages
+base_topic: zigbee2mqtt
+# MQTT server URL
+server: ‘mqtt://xxx.xxx.xx.xxx’ # fillup with your mqtt container ip
+# MQTT server authentication, uncomment if required:
+user: mqtt-user
+password: xxxxxxxxxxxxx
+# Serial settings
+serial:
+# Location of USB sniffer
+port: /dev/ttyUSB0
